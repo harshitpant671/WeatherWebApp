@@ -28,7 +28,7 @@ const weatherAssets = {
 
 const fetchResults = async (targetLocation) => {
     try {
-        const url = `http://api.weatherapi.com/v1/current.json?key=1f3c49e7fef340dc88961756262303&q=${targetLocation}&aqi=no`;
+        const url = `https://api.weatherapi.com/v1/current.json?key=1f3c49e7fef340dc88961756262303&q=${targetLocation}&aqi=no`;
         const response = await fetch(url);
         
         if (!response.ok) throw new Error('City not found');
